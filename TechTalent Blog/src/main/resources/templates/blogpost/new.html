@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Begin Registration</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+</head>
+<body>
+ <div class="container">
+	<h3>Free Webinar| August 15: Lean Practice Plan Startup Tips and Tools For A Value based Healthcare Business </h3>
+	<h4> Our mission is to provide you with the tools you need to create a practice that will sustain you personally
+	 and professionally so that you may serve yourself and your community.</h4>
+	<p>Please use the form below to submit your registration:</p>
+ 
+
+  <div class="shadow-lg p-3 mb-5 bg-white rounded">
+ 	<form action="#" th:action="@{/}" th:object="${blogPost}" method="post">
+   	 <table>
+		<tr>
+            <td>First Name</td>
+	   		 <td><input type="text" th:field="*{firstName}" /></td>
+		</tr>
+		<tr>
+	  		  <td>Last Name:</td>
+	    		<td><input type="text" th:field="*{LastName}" /></td>
+		</tr>
+		<tr>
+    	    <td>Email Address:</td>
+	    	<td><input type="text" th:field="*{emailAddress}" /></td>
+		</tr>
+		<tr>
+	    	<td><button type="submit" class="btn btn-danger">Submit Registration</button></td>
+		</tr>
+    </table>
+</form>
+
+
+  </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+
+</body>
+</html>

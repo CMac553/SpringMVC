@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Thank You for Registering</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+	 
+	  <div class="shadow-lg p-3 mb-5 bg-white rounded">
+		<h3>Congratulations</h3>
+		<p>Check your email for webinar login details</p>
+		<h4>See you August 15th!</h4>
+		<p th:text="${firstName}"/>
+		<p th:text="${lastName}"/>
+		<p th:text="${emailAddress}"/>
+
+	
+		<a th:href="@{/}"><button class="btn btn-success">Back to Home Page</button></a>
+	
+		<a th:href="@{/blog_posts/new}"><button class="btn btn-primary">Register here</button></a>
+		
+	</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+
+</body>
+</html>
